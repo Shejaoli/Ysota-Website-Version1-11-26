@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "YSOTA Ltd"
+description = "A complete, responsive corporate website for YSOTA Ltd, a Rwandan technology and business solutions company serving businesses, institutions, entrepreneurs, and individuals."
+version = "1.0.0"
+id = "artifacts/ysota-website"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 21328
+
+[services.development]
+run = "pnpm --filter @workspace/ysota-website run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/ysota-website", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/ysota-website/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "21328"
+BASE_PATH = "/"
