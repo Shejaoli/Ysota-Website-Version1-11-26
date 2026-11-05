@@ -6,7 +6,7 @@ import { TooltipProvider } from '@/components/ui/tooltip';
 import { Route, Switch, Link, useLocation, useParams, Router as WouterRouter } from 'wouter';
 import { ArrowRight, Menu, X, Code2, Globe2, Bot, MessageCircle, Headphones, Wrench, Laptop, GraduationCap, Boxes, Network, ShoppingBag, Store, BriefcaseBusiness, Sprout, BookOpen, Building2, Search, Send, Cpu, Monitor, Settings2 } from 'lucide-react';
 import NotFound from '@/pages/not-found';
-import logo from '@assets/YSOTA_LOGO_1793836170933.png';
+const logo = `${import.meta.env.BASE_URL}ysota-logo.png`;
 
 const queryClient = new QueryClient();
 const WA = '250786216987';
