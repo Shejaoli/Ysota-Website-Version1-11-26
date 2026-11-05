@@ -161,3 +161,23 @@ main section:nth-of-type(9n + 6)::before { background-image:url('/patterns/imigo
 main section:nth-of-type(9n + 7)::before { background-image:url('/patterns/imigongo-07-diamonds.svg'); }
 main section:nth-of-type(9n + 8)::before { background-image:url('/patterns/imigongo-08-triangle-bands.svg'); }
 main section:nth-of-type(9n)::before { background-image:url('/patterns/imigongo-09-diagonal-weave.svg'); }
+
+/* Button surfaces echo the section motifs without reducing label contrast. */
+.btn,.nav-cta,.demo-launcher,.filter-row button,.demo-suggestions button,.demo-compose button,.loader-skip {
+  background-repeat:repeat;
+  background-size:54px 54px;
+  background-blend-mode:soft-light;
+}
+.btn,.btn:hover { background-image:url('/patterns/imigongo-03-triangle-weave.svg'); }
+.btn.secondary,.btn.secondary:hover {
+  background-image:url('/patterns/imigongo-05-waves.svg');
+  background-color:rgba(11,107,181,.045);
+}
+.nav-cta,.nav-cta:hover { background-image:url('/patterns/imigongo-02-square-spiral.svg'); }
+.demo-launcher,.demo-launcher:hover { background-image:url('/patterns/imigongo-07-diamonds.svg'); }
+.filter-row button,.filter-row button:hover,.filter-row button.selected { background-image:url('/patterns/imigongo-04-chevron.svg'); }
+.demo-suggestions button,.demo-suggestions button:hover { background-image:url('/patterns/imigongo-06-circles.svg'); }
+.demo-compose button { background-image:url('/patterns/imigongo-09-diagonal-weave.svg'); }
+.loader-skip,.loader-skip:hover { background-image:url('/patterns/imigongo-08-triangle-bands.svg'); }
+.btn:not(.secondary),.demo-compose button { background-blend-mode:normal; }
+.nav-cta:hover,.filter-row button:hover,.demo-suggestions button:hover { background-blend-mode:normal; }
