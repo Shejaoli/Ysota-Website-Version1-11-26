@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 84 84">
+  <g stroke="#0a3d6b" stroke-opacity=".2" stroke-width="1.6">
+    <path fill="#0a3d6b" fill-opacity=".12" d="M0 0h28v28ZM28 0h28L28 28ZM56 0h28v28ZM0 28h28L0 56ZM28 28h28v28ZM56 28h28L56 56ZM0 56h28v28ZM28 56h28L28 84ZM56 56h28v28Z"/>
+    <path fill="none" d="M0 0v28h28M28 0v28h28M56 0v28h28M0 28v28h28M28 28v28h28M56 28v28h28M0 56v28h28M28 56v28h28M56 56v28h28"/>
+  </g>
+</svg>

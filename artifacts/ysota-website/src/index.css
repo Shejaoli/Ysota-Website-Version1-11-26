@@ -132,3 +132,32 @@ body:has(a:hover) .pointer-orbit,body:has(button:hover) .pointer-orbit { width:5
 .loader-skip { border-color:rgba(10,61,107,.35);color:#0a3d6b; }
 .loader-skip:hover { background:rgba(10,61,107,.08); }
 .loader-brand img { background:#fff;padding:4px; }
+
+/* Low-contrast Imigongo-inspired motifs; each section gets a different tile. */
+main section {
+  position:relative;
+  isolation:isolate;
+}
+main section::before {
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:0;
+  pointer-events:none;
+  opacity:.08;
+  background-repeat:repeat;
+  background-size:180px 180px;
+}
+main section > * {
+  position:relative;
+  z-index:1;
+}
+main section:nth-of-type(9n + 1)::before { background-image:url('/patterns/imigongo-01-triangles.svg'); }
+main section:nth-of-type(9n + 2)::before { background-image:url('/patterns/imigongo-02-square-spiral.svg'); }
+main section:nth-of-type(9n + 3)::before { background-image:url('/patterns/imigongo-03-triangle-weave.svg'); }
+main section:nth-of-type(9n + 4)::before { background-image:url('/patterns/imigongo-04-chevron.svg'); }
+main section:nth-of-type(9n + 5)::before { background-image:url('/patterns/imigongo-05-waves.svg'); }
+main section:nth-of-type(9n + 6)::before { background-image:url('/patterns/imigongo-06-circles.svg'); }
+main section:nth-of-type(9n + 7)::before { background-image:url('/patterns/imigongo-07-diamonds.svg'); }
+main section:nth-of-type(9n + 8)::before { background-image:url('/patterns/imigongo-08-triangle-bands.svg'); }
+main section:nth-of-type(9n)::before { background-image:url('/patterns/imigongo-09-diagonal-weave.svg'); }

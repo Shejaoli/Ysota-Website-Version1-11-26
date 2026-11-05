@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 84 84">
+  <g stroke="#0a3d6b" stroke-opacity=".2" stroke-width="1.5">
+    <path fill="#0a3d6b" fill-opacity=".12" d="M0 0h28L14 24ZM28 0h28L42 24ZM56 0h28L70 24ZM14 24h28L28 48ZM42 24h28L56 48ZM70 24h28L84 48ZM0 48h28L14 72ZM28 48h28L42 72ZM56 48h28L70 72ZM14 72h28L28 96ZM42 72h28L56 96ZM70 72h28L84 96Z"/>
+    <path fill="none" d="m0 24 14-24 14 24 14-24 14 24L70 0l14 24M0 72l14-24 14 24 14-24 14 24 14-24 14 24M-14 48 0 24l14 24 14-24 14 24 14-24 14 24 14-24 14 24"/>
+  </g>
+</svg>
